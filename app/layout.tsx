@@ -1,3 +1,4 @@
+import { PwaServiceWorker } from "@/components/PwaServiceWorker";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import type { Metadata } from "next";
@@ -32,6 +33,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col text-zinc-900 dark:text-slate-100">
+        <PwaServiceWorker />
         <ThemeProvider>
           <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-slate-700 dark:bg-slate-900/90">
             <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
