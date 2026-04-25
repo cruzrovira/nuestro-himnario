@@ -35,3 +35,29 @@ Mateo 28:19, Cristo da el mandamiento
 del bautismo que se debe obedecer,  
 por eso el apóstol Pedro en Hechos 2:38  
 nos lo da a conocer.
+
+## III
+
+Tres testigos en la biblia nos confirman  
+el bautismo en el Nombre de Jesús;  
+tres apóstoles de Cristo.  
+Pedro, Juan y también Pablo  
+nos confirman esta luz.  
+Un testigo en el cielo, da el mismo testimonio  
+el Padre, el Verbo y el Espíritu que es Dios  
+y este glorioso misterio,  
+Juan muy bien nos lo declara,  
+que estos tres el mismo son.
+
+## IV
+
+Este uno es Jesucristo,  
+Emanuel, Dios con nosotros,  
+Padre Eterno y también Príncipe de Paz;  
+en el principio era el Verbo y el Verbo  
+era con Dios y este Verbo era Dios.  
+Si alguien tiene entendimiento  
+hallará el fundamento  
+del Padre, del Hijo y del Espíritu que es Dios  
+si tienes revelación, halla la combinación  
+que estos tres, el mismo son.
