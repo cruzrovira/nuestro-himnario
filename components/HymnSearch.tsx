@@ -68,7 +68,7 @@ export function HymnSearch({ hymns }: HymnSearchProps) {
       ) : (
         <ul className="grid gap-3 sm:grid-cols-2">
           {paginated.map((hymn) => (
-            <li key={hymn.slug}>
+            <li key={hymn.slug} className="w-full overflow-hidden">
               <Link
                 href={`/himno/${hymn.slug}`}
                 className="group flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-5 py-4 text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:hover:border-slate-500 dark:hover:bg-slate-700"
