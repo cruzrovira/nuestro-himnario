@@ -13,10 +13,11 @@ export default function Home() {
         <h1 className="text-3xl font-bold tracking-tight text-zinc-900 dark:text-slate-50 sm:text-5xl">
           Nuestro Himnario
         </h1>
-        <p className="mt-3 max-w-2xl text-zinc-600 dark:text-slate-200 sm:text-lg">
+        <p className="mt-3  text-zinc-600 dark:text-slate-200 sm:text-lg">
           Es una recopilación de himnos para la adoración y alabanza al Señor,
           con el propósito de facilitar la congregación y el canto en la
           iglesia.
+          <br />
           <i>
             “Alabadle con pandero y danza; alabadle con cuerdas y flautas.”
             Salmos 150:4
