@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nuestro Himnario
 
-## Getting Started
+Aplicación web para consultar letras de himnos cristianos, con búsqueda por título o número de página y vista individual por canto.
 
-First, run the development server:
+## Características
+
+- Listado de cantos con paginación.
+- Búsqueda por nombre o página.
+- Ruta dinámica por himno (`/himno/[slug]`).
+- Soporte de tema claro/oscuro.
+- Contenido gestionado desde archivos Markdown.
+
+## Tecnologías
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- gray-matter
+- react-markdown
+
+## Requisitos
+
+- Node.js 20+
+- pnpm (recomendado)
+
+## Instalación
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts disponibles
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev      # entorno de desarrollo
+pnpm build    # compilación de producción
+pnpm start    # ejecutar build en producción
+pnpm lint     # análisis estático con ESLint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Luego abre `http://localhost:3000`.
 
-## Learn More
+## Estructura del contenido
 
-To learn more about Next.js, take a look at the following resources:
+Los himnos viven en `content/hymns/*.md`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Cada archivo usa frontmatter:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```md
+---
+title: "A Jesucristo Ven Sin Tardar"
+page: 17
+---
 
-## Deploy on Vercel
+## A JESUCRISTO VEN SIN TARDAR
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## I
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Texto del himno...
+```
+
+Campos soportados:
+
+- `title` (string, requerido): título que se muestra en listados y metadatos.
+- `page` (number, opcional): número de página del himnario impreso.
+
+El `slug` se obtiene del nombre del archivo. Ejemplo:
+
+- Archivo: `a-jesucristo-ven-sin-tardar.md`
+- URL: `/himno/a-jesucristo-ven-sin-tardar`
+
+## Cómo agregar un nuevo himno
+
+1. Crea un archivo `.md` dentro de `content/hymns/`.
+2. Agrega `title` (y opcionalmente `page`) en el frontmatter.
+3. Escribe la letra en Markdown.
+4. Guarda y verifica en el home que aparezca en el buscador.
+
+Nota: los himnos se ordenan por `page` cuando existe; si no, por título (orden alfabético en español).
