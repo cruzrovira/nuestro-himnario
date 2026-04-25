@@ -14,8 +14,10 @@ export default function Home() {
           Nuestro Himnario
         </h1>
         <p className="mt-3 max-w-2xl text-zinc-600 dark:text-slate-200 sm:text-lg">
-          Busca por nombre o pagina y encuentra de manera rápida el canto que
-          deseas cantar, para adorar a Dios.
+          Es una recopilación de himnos para la adoración y alabanza al Señor,
+          con el propósito de facilitar la congregación y el canto en la
+          iglesia. “Alabadle con pandero y danza; alabadle con cuerdas y
+          flautas.” Salmos 150:4
         </p>
       </div>
 
