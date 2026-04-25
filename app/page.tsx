@@ -14,8 +14,8 @@ export default function Home() {
           Nuestro Himnario
         </h1>
         <p className="mt-3 max-w-2xl text-zinc-600 dark:text-slate-200 sm:text-lg">
-          Busca por nombre o pagina y encuentra rapido cada canto con una
-          lectura clara, limpia y agradable en cualquier tema.
+          Busca por nombre o pagina y encuentra de manera rápida el canto que
+          deseas cantar, para adorar a Dios.
         </p>
       </div>
 
