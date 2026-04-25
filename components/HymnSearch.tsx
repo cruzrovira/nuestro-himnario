@@ -71,9 +71,9 @@ export function HymnSearch({ hymns }: HymnSearchProps) {
             <li key={hymn.slug} className="w-full overflow-hidden">
               <Link
                 href={`/himno/${hymn.slug}`}
-                className="group flex items-center gap-3 rounded-xl border border-zinc-200 bg-white px-5 py-4 text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:hover:border-slate-500 dark:hover:bg-slate-700"
+                className="group flex items-center gap-2 rounded-xl border border-zinc-200 bg-white px-3 py-3 text-zinc-900 transition hover:border-zinc-300 hover:bg-zinc-50 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:hover:border-slate-500 dark:hover:bg-slate-700 sm:gap-3 sm:px-5 sm:py-4"
               >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-zinc-700 transition dark:bg-slate-700 dark:text-slate-200">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-zinc-100 text-zinc-700 transition dark:bg-slate-700 dark:text-slate-200 sm:h-9 sm:w-9">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -90,10 +90,10 @@ export function HymnSearch({ hymns }: HymnSearchProps) {
                     <circle cx="18" cy="16" r="3" />
                   </svg>
                 </span>
-                <span className="flex min-w-0 flex-1 items-center justify-between gap-3">
+                <span className="flex min-w-0 flex-1 items-center justify-between gap-2">
                   <span className="truncate font-medium">{hymn.title}</span>
                   {hymn.page !== undefined && (
-                    <span className="shrink-0 rounded-md border border-zinc-200 bg-zinc-50 px-2 py-0.5 text-xs font-semibold text-zinc-600 dark:border-slate-500 dark:bg-slate-700 dark:text-slate-200">
+                    <span className="shrink-0 rounded-md border border-zinc-200 bg-zinc-50 px-1.5 py-0.5 text-xs font-semibold text-zinc-600 dark:border-slate-500 dark:bg-slate-700 dark:text-slate-200 sm:px-2">
                       Pag. {hymn.page}
                     </span>
                   )}
@@ -105,7 +105,7 @@ export function HymnSearch({ hymns }: HymnSearchProps) {
       )}
 
       {filtered.length > 0 && (
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-2">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
           <button
             type="button"
             onClick={() => goToPage(safePage - 1)}
