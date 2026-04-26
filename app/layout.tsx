@@ -36,7 +36,7 @@ export default function RootLayout({
         <PwaServiceWorker />
         <ThemeProvider>
           <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-slate-700 dark:bg-slate-900/90">
-            <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
+            <div className="mx-auto flex container items-center justify-between px-4 py-3 sm:px-6">
               <Link
                 href="/"
                 className="flex items-center gap-2 font-semibold text-zinc-900 transition-colors hover:text-zinc-700 dark:text-slate-100 dark:hover:text-slate-200"
@@ -62,7 +62,9 @@ export default function RootLayout({
               <ThemeToggle />
             </div>
           </header>
-          <main className="flex flex-1 flex-col">{children}</main>
+          <main className="flex flex-1 flex-col mx-auto container">
+            {children}
+          </main>
           <footer className="border-t border-zinc-200 py-7 text-center text-sm text-zinc-500 dark:border-slate-700 dark:text-slate-400">
             Nuestro Himnario — Para la gloria de Dios
           </footer>

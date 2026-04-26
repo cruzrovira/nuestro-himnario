@@ -5,7 +5,7 @@ export default function Home() {
   const hymns = getAllHymns();
 
   return (
-    <div className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
+    <div className="mx-auto container px-4 py-10 sm:px-6 sm:py-14">
       <div className="mb-10 rounded-2xl border border-zinc-200 bg-white px-4 py-6 dark:border-slate-700 dark:bg-slate-900 sm:px-6 sm:py-8 md:px-8 md:py-10">
         <p className="mb-3 text-xs font-semibold tracking-wide text-zinc-500 dark:text-slate-400">
           Letras para congregar y cantar
@@ -30,7 +30,7 @@ export default function Home() {
           Explora cantos
         </h2>
         <p className="mb-6 text-sm text-zinc-600 dark:text-slate-300">
-          {hymns.length}{" "}
+          {hymns.length}
           {hymns.length === 1 ? "canto disponible" : "cantos disponibles"}
         </p>
         <HymnSearch hymns={hymns} />
