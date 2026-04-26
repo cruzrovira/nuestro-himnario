@@ -3,7 +3,7 @@ title: "Hermanos a luchar"
 page: 33
 ---
 
-## HERMANOS A LUCHAR
+# HERMANOS A LUCHAR
 
 ## I
 

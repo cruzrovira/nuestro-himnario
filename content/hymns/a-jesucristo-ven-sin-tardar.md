@@ -3,7 +3,7 @@ title: "A Jesucristo Ven Sin Tardar"
 page: 17
 ---
 
-## A JESUCRISTO VEN SIN TARDAR
+# A JESUCRISTO VEN SIN TARDAR
 
 ## I
 

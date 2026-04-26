@@ -3,7 +3,7 @@ title: "Llegaronse los Tiempos"
 page: 16
 ---
 
-## LLEGARONSE LOS TIEMPOS
+# LLEGARONSE LOS TIEMPOS
 
 ## I
 

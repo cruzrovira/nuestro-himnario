@@ -3,7 +3,7 @@ title: "Divinidad Plena de Jesús"
 page: 5
 ---
 
-## DIVINIDAD PLENA DE JESÚS
+# DIVINIDAD PLENA DE JESÚS
 
 ## I
 

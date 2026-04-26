@@ -3,7 +3,7 @@ title: "Soy Bautizado"
 page: 2
 ---
 
-## SOY BAUTIZADO
+# SOY BAUTIZADO
 
 ## I
 

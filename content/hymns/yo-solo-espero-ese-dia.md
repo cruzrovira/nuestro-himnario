@@ -3,7 +3,7 @@ title: "Yo Solo Espero Ese Día"
 page: 20
 ---
 
-## YO SÓLO ESPERO ESE DÍA
+# YO SÓLO ESPERO ESE DÍA
 
 ## I
 

@@ -3,7 +3,7 @@ title: "Más Allá del Sol"
 page: 19
 ---
 
-## MÁSALLA DEL SOL
+# MÁSALLA DEL SOL
 
 ## I
 

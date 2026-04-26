@@ -3,7 +3,7 @@ title: "Relación de Jesús"
 page: 10
 ---
 
-## RELACIÓN DE JESÚS
+# RELACIÓN DE JESÚS
 
 ## I
 

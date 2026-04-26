@@ -3,7 +3,7 @@ title: "Sigue adelante"
 page: 31
 ---
 
-## SIGUE ADELANTE
+# SIGUE ADELANTE
 
 ## I
 

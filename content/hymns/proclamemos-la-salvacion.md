@@ -3,7 +3,7 @@ title: "Proclamemos la Salvación"
 page: 29
 ---
 
-## PROCLAMEMOS LA SALVACIÓN
+# PROCLAMEMOS LA SALVACIÓN
 
 ## I
 

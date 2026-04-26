@@ -3,7 +3,7 @@ title: "Cristo Está Buscando Obreros"
 page: 24
 ---
 
-## CRISTO ESTA BUSCANDO OBREROS
+# CRISTO ESTA BUSCANDO OBREROS
 
 ## I
 

@@ -3,7 +3,7 @@ title: "Bellas Palabras de Vida"
 page: 25
 ---
 
-## BELLAS PALABRAS DE VIDA
+# BELLAS PALABRAS DE VIDA
 
 ## I
 

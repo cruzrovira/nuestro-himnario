@@ -3,7 +3,7 @@ title: "En un Aposento Alto"
 page: 12
 ---
 
-## En un Aposento Alto
+# En un Aposento Alto
 
 ## I
 

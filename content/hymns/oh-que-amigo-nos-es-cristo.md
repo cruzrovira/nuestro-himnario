@@ -3,7 +3,7 @@ title: "Oh, Qué Amigo Nos Es Cristo"
 page: 23
 ---
 
-## Oh que amigo nos es Cristo
+# Oh que amigo nos es Cristo
 
 ## I
 

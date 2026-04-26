@@ -3,7 +3,7 @@ title: "El Espíritu Santo"
 page: 18
 ---
 
-## EL ESPİRITU SANTO
+# EL ESPİRITU SANTO
 
 ## I
 

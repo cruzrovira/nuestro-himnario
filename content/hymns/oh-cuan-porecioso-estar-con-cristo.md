@@ -3,7 +3,7 @@ title: "Oh, cuán precioso es estar con Cristo"
 page: 3
 ---
 
-## ¡OH, CUAN PRECIOSO ESTAR CON CRISTO!
+# ¡OH, CUAN PRECIOSO ESTAR CON CRISTO!
 
 # I
 

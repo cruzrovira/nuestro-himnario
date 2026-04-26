@@ -3,7 +3,7 @@ title: "Cristo Nuestro Jefe"
 page: 15
 ---
 
-## CRISTO NUESTRO JEFE
+# CRISTO NUESTRO JEFE
 
 ## I
 

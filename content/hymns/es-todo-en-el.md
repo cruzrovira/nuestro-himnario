@@ -3,7 +3,7 @@ title: "Es todo en Él"
 page: 28
 ---
 
-## Es todo en Él
+# Es todo en Él
 
 ## I
 
