@@ -1,4 +1,4 @@
-const CACHE_NAME = "nuestro-himnario-v1";
+const CACHE_NAME = "nuestro-himnario-v2";
 const OFFLINE_FALLBACK_URL = "/";
 
 self.addEventListener("install", (event) => {
@@ -36,6 +36,44 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  // Bypass cache for API routes so dynamic data is always fresh.
+  if (requestUrl.pathname.startsWith("/api/")) {
+    event.respondWith(fetch(event.request));
+    return;
+  }
+
+  // Network-first for navigation requests (HTML pages) so new hymns are
+  // reflected immediately when online; fall back to cache when offline.
+  if (event.request.mode === "navigate") {
+    event.respondWith(
+      fetch(event.request)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.ok) {
+            const responseToCache = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseToCache);
+            });
+          }
+          return networkResponse;
+        })
+        .catch(() =>
+          caches
+            .match(event.request)
+            .then(
+              (cached) =>
+                cached ||
+                caches.match(OFFLINE_FALLBACK_URL) ||
+                new Response("Sin conexión", {
+                  status: 503,
+                  headers: { "Content-Type": "text/plain; charset=utf-8" },
+                }),
+            ),
+        ),
+    );
+    return;
+  }
+
+  // Cache-first for static assets (JS, CSS, images, fonts, etc.).
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) {
@@ -44,7 +82,7 @@ self.addEventListener("fetch", (event) => {
 
       return fetch(event.request)
         .then((networkResponse) => {
-          if (networkResponse && networkResponse.status === 200) {
+          if (networkResponse && networkResponse.ok) {
             const responseToCache = networkResponse.clone();
             caches.open(CACHE_NAME).then((cache) => {
               cache.put(event.request, responseToCache);
@@ -52,7 +90,14 @@ self.addEventListener("fetch", (event) => {
           }
           return networkResponse;
         })
-        .catch(() => caches.match(OFFLINE_FALLBACK_URL));
+        .catch(
+          () =>
+            caches.match(OFFLINE_FALLBACK_URL) ||
+            new Response("Sin conexión", {
+              status: 503,
+              headers: { "Content-Type": "text/plain; charset=utf-8" },
+            }),
+        );
     }),
   );
 });
