@@ -1,6 +1,6 @@
 ---
 title: "Jesús es mi Rey soberano"
-page: 1007
+page: 107
 ---
 
 # JESÚS ES MI REY SOBERANO
@@ -13,7 +13,7 @@ es mi Rey, y me ve cual hermano,
 es Rey, y me imparte su amor.  
 dejando su trono de gloria,  
 me vino a sacar de la escoria,  
-y yo soy feliz, y yo soy feliz por él.  
+y yo soy feliz, y yo soy feliz por él.
 
 ## II
 
@@ -23,7 +23,7 @@ paciente y humilde a mi lado,
 y ayuda y socorro me da  
 por eso constante lo sigo,  
 porque él es mi Rey y mi Amigo,  
-y yo soy feliz, y yo soy feliz por él.  
+y yo soy feliz, y yo soy feliz por él.
 
 ## III
 
@@ -33,4 +33,4 @@ por tanta bondad para mí?
 ¿es todo entregarme yo a ti?  
 entonces acepta mi vida,  
 que a ti sólo queda rendida,  
-pues yo soy feliz, pues yo soy feliz por ti.  
+pues yo soy feliz, pues yo soy feliz por ti.
