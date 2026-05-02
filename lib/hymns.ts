@@ -4,6 +4,15 @@ import path from "path";
 
 const hymnsDirectory = path.join(process.cwd(), "content", "hymns");
 
+function parseMatter(fileContents: string, filePath: string) {
+  try {
+    return matter(fileContents);
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Unknown error";
+    throw new Error(`Error parsing hymn file '${filePath}': ${message}`);
+  }
+}
+
 export interface HymnMeta {
   slug: string;
   title: string;
@@ -23,7 +32,7 @@ export function getAllHymns(): HymnMeta[] {
       const slug = file.replace(/\.md$/, "");
       const fullPath = path.join(hymnsDirectory, file);
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data } = matter(fileContents);
+      const { data } = parseMatter(fileContents, fullPath);
       const parsedPage = Number(data.page);
       const page = Number.isFinite(parsedPage) ? parsedPage : undefined;
 
@@ -58,7 +67,7 @@ export function getHymn(slug: string): Hymn | null {
   }
 
   const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
+  const { data, content } = parseMatter(fileContents, fullPath);
   const parsedPage = Number(data.page);
   const page = Number.isFinite(parsedPage) ? parsedPage : undefined;
 
